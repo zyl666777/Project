@@ -3,6 +3,7 @@
 <%@ page import="java.io.*,java.util.*, javax.servlet.*" %>
 <jsp:useBean id='objDBconfig' scope='session' class='hitstd.group.tool.database.DBconfig' />
 <%@ page import="date.text.turndate" %>
+<%@include file ="menu.jsp" %>
 <!DOCTYPE html>
 <html>
 <head>

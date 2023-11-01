@@ -1,18 +1,16 @@
+
 <%@ page language="java" contentType="text/html; charset=BIG5"%>
 <%@ page import="java.sql.*"%>
 <%@ page import="java.io.*,java.util.*, javax.servlet.*" %>
 <jsp:useBean id='objDBconfig' scope='session' class='hitstd.group.tool.database.DBconfig' />
 <%@ page import="date.text.turndate" %>
 <%@include file ="menu.jsp" %>
-
-
 <!DOCTYPE html>
 <html class="wide wow-animation" lang="en">
-  <head>
-    <title>首頁</title>
-    
+
   <body>
-       
+   <%response.setCharacterEncoding("BIG5");%>
+      
       <!--About-->
       <section class="section section-sm position-relative" id="about">
         <div class="container">
@@ -23,36 +21,50 @@
             </div>
             <div class="col-lg-6 col-12">
               <div class="block-sm offset-top-45">
-                <div class="wow fadeInLeft text-capitalize devider-bottom" data-wow-delay=".3s"><font size="20">歡迎使用</font></div>
-                <h3 class="section-name wow fadeInRight" data-wow-delay=".3s"><span class="text-primary">服務說明</span></h3>
-                <p class="offset-xl-40 wow fadeInUp" data-wow-delay=".4s">1.本掛號系統僅服務 牙醫輔助系統 網路掛號之民眾。
-                  <br>  2.可預約當月之門診。
-                  <br> 3.暫 不受理 當日之網路掛號！如有需要，請親自前往診所掛號。
-                  <br> 4.若於掛號當日，因故無法前來就診，請在看診前 1 日取消掛號。
-                  <br> 5.為維護大眾健康，進出診所請全程戴口罩，並配合量體溫，如發現有發燒，請遵照工作人員指示就診。</p>
+                <div class="wow fadeInLeft text-capitalize devider-bottom" data-wow-delay=".3s"><font size="20">預約資料確認</font></div>
+                <h3 class="section-name wow fadeInRight" data-wow-delay=".3s"><span class="text-primary">您所掛號的資料</span></h3>
+                <p class="offset-xl-40 wow fadeInUp" data-wow-delay=".4s"></p>
+                </p>
+</p>
+                
+                <form action="appoint_take.jsp" method="post">
+                <select name="MN">
+                <option>看診時間:</option>
+                <option value="M">早診</option>
+                <option value="N">下午診</option>
+            </select></p>
+                <select name="role">
+                <option>請選擇醫師</option>
+                <option value="123456">王小美</option>
+                <option value="789223">王大有</option>
+                <option value="111213">王曉明</option>
+            </select></p>
+                  日期：<input type="date" name="Pdate"></p>
+                  請輸入身份證字號：<input type="text" name="patientID"></p>
+     
+                  出生年月日-8碼：<input type="text" name="birth"></p>
+                  初診：<br>
+                  <input  type="radio" name="first-diagnosis" value="A">初診
+                  <input  type="radio" name="Not-first-diagnosis" value="B">非初診<p>
+                </p>
                   <div class="col-lg-6 col-12">
                     <div class="block-sm offset-top-45">
-                      <br><h3 class="section-name wow fadeInRight" data-wow-delay=".3s"><span class="text-primary">立刻使用</span></h3>
-                      <br><br><br><button type=""></button><style type="text/css">
-                        
+
                       
-                        
-                
-                      </style>
-                <p class="default-letter-spacing font-weight-bold text-gray-dark wow fadeInUp" data-wow-delay=".4s"></p>
-                <a class="button-width-190 button-primary button-circle button-lg button offset-top-30" href="appoint.jsp">依看診醫生掛號</a>
-              <a class="button-width-190 button-primary button-circle button-lg button offset-top-30" href="appoint.jsp">查詢掛號</a>
-              </div>
+                     <br><br><br><input type="submit" value="確認送出">
+         </div>
+              
             </div>
+            </form>
           </div>
         </div>
         <div class="decor-text decor-text-1">ABOUT</div>
-      
+        
       <!--Counters-->
       <script src="js/core.min.js"></script>
       <script src="js/script.js"></script>
+     
       <!--Pricing--> 
-  
      
       <!--Owl Carousel--> 
     <!--Footer--><a class="section section-banner" href="https://www.templatemonster.com/intense-multipurpose-html-template.html" target="_blank" style="background-image: url(images/background-01-1920x310.jpg); background-image: -webkit-image-set( url(images/background-01-1920x310.jpg) 1x, url(images/background-01-3840x620.jpg) 2x )"><img src="images/foreground-01-1600x310.png" srcset="images/foreground-01-1600x310.png 1x, images/foreground-01-3200x620.png 2x" alt="" width="1600" height="310"></a> 
