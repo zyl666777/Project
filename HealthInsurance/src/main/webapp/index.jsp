@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=BIG5"%>
 <%@ page import="java.sql.*"%>
 <%@ page import="java.io.*,java.util.*, javax.servlet.*" %>
-<jsp:useBean id='objDBconfig' scope='session' class='hitstd.group.tool.database.DBconfig' />
+
 <%@ page import="date.text.turndate" %>
 <%@include file ="menu.jsp" %>
 
@@ -9,7 +9,7 @@
 <!DOCTYPE html>
 <html class="wide wow-animation" lang="en">
   <head>
-    <title>����</title>
+    <title>首頁</title>
     
   <body>
        
@@ -23,16 +23,16 @@
             </div>
             <div class="col-lg-6 col-12">
               <div class="block-sm offset-top-45">
-                <div class="wow fadeInLeft text-capitalize devider-bottom" data-wow-delay=".3s"><font size="20">�w��ϥ�</font></div>
-                <h3 class="section-name wow fadeInRight" data-wow-delay=".3s"><span class="text-primary">�A�Ȼ���</span></h3>
-                <p class="offset-xl-40 wow fadeInUp" data-wow-delay=".4s">1.�������t�ζȪA�� ���廲�U�t�� ���������������C
-                  <br>  2.�i�w�����뤧���E�C
-                  <br> 3.�� �����z ���餧���������I�p���ݭn�A�п˦۫e���E�ұ����C
-                  <br> 4.�Y�󱾸�����A�]�G�L�k�e�ӴN�E�A�Цb�ݶE�e 1 ����������C
-                  <br> 5.�����@�j�����d�A�i�X�E�ҽХ��{���f�n�A�ðt�X�q��šA�p�o�{���o�N�A�п��Ӥu�@�H�����ܴN�E�C</p>
+                <div class="wow fadeInLeft text-capitalize devider-bottom" data-wow-delay=".3s"><font size="20">歡迎使用</font></div>
+                <h3 class="section-name wow fadeInRight" data-wow-delay=".3s"><span class="text-primary">服務說明</span></h3>
+                <p class="offset-xl-40 wow fadeInUp" data-wow-delay=".4s">1.本掛號系統僅服務 牙醫輔助系統 網路掛號之民眾。
+                  <br>  2.可預約當月之門診。
+                  <br> 3.暫 不受理 當日之網路掛號！如有需要，請親自前往診所掛號。
+                  <br> 4.若於掛號當日，因故無法前來就診，請在看診前 1 日取消掛號。
+                  <br> 5.為維護大眾健康，進出診所請全程戴口罩，並配合量體溫，如發現有發燒，請遵照工作人員指示就診。</p>
                   <div class="col-lg-6 col-12">
                     <div class="block-sm offset-top-45">
-                      <br><h3 class="section-name wow fadeInRight" data-wow-delay=".3s"><span class="text-primary">�ߨ�ϥ�</span></h3>
+                      <br><h3 class="section-name wow fadeInRight" data-wow-delay=".3s"><span class="text-primary">立刻使用</span></h3>
                       <br><br><br><button type=""></button><style type="text/css">
                         
                       
@@ -40,8 +40,8 @@
                 
                       </style>
                 <p class="default-letter-spacing font-weight-bold text-gray-dark wow fadeInUp" data-wow-delay=".4s"></p>
-                <a class="button-width-190 button-primary button-circle button-lg button offset-top-30" href="appoint.jsp">�̬ݶE��ͱ���</a>
-              <a class="button-width-190 button-primary button-circle button-lg button offset-top-30" href="appoint.jsp">�d�߱���</a>
+                <a class="button-width-190 button-primary button-circle button-lg button offset-top-30" href="appoint.jsp">依看診醫生掛號</a>
+              <a class="button-width-190 button-primary button-circle button-lg button offset-top-30" href="appoint.jsp">查詢掛號</a>
               </div>
             </div>
           </div>
